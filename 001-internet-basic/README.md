@@ -1,8 +1,6 @@
 Although this topic is not so "frontend", we must have some basic knowledge about how the Internet, WWW and HTTP work.
 
 Main concerns:
-1. how HTML work
-
 1. who currently "manage" the Internet
     - IETF
     - IAB
