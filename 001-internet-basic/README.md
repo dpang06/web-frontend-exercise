@@ -1,7 +1,7 @@
 Although this topic is not so "frontend", we must have some basic knowledge about how the Internet, WWW and HTTP work.
 
 Main concerns:
-1. who currently "manage" the Internet
+1. the documents provided by organizations who currently "manage" the World Wide Web
     - IETF
     - IAB
         - RFC
