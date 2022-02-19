@@ -4,7 +4,7 @@ Main concerns:
 1. who currently "manage" the Internet
     - IETF
     - IAB
-        -RFC
+        - RFC
     - ICANN
         - IANA
     - W3C
