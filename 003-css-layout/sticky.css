@@ -1,0 +1,22 @@
+#wrapper {
+    display: grid;
+    grid-template:
+        'nav' auto
+        'main' 1000px
+        ;
+    min-height: 100vh;
+    overflow: auto;
+
+    background-color: cyan;
+}
+
+nav { 
+    grid-area: nav;
+
+    /* sticky bar */
+    position: sticky;
+    top: 0;
+    /* overflow: auto; */
+
+    background-color: grey;
+}
