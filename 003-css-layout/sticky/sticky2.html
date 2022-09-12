@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+        <link rel="stylesheet" href="sticky2.css">
+        <title>David's Portfolio</title>
+        <style>
+            main #welcome {
+                font-size: xx-large;
+                vertical-align: top;
+                line-height: 2;
+                /* font-size: 100%; */
+                text-align: center;
+
+            }
+            main #welcome #name {
+                font-weight: bold;
+                font-family: sans-serif;
+                color: cyan;
+            }
+            main #introduction {
+                font-size: large;
+            }
+            main #checkout_more {
+                background-color: rgb(58, 114, 114);
+                border-radius: 3px;
+                text-decoration: none;
+                padding: 10px;
+            }
+
+            @media only screen and (max-width: 768px) {
+                /* Don't split my name!*/
+                main #welcome #name {
+                    display: inline-block;
+                }
+                main #welcome {
+                    font-size: x-large;
+                }
+                main #introduction {
+                    font-size: medium;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrapper">
+            <nav>
+                <ul><li><a href="index.html">Home</a></li
+                    ><li><a href="about.html">About</a></li
+                    ><li><a href="experience.html">Experience</a></li
+                    ><li><a href="education.html">Education</a></li
+                    ><li><a href="projects.html">Projects</a></li
+                    ><li><a href="contact.html">Contact</a></li
+                    >
+                </ul>
+            </nav>
+            <header>David's Portfolio</header>
+            <main>
+                <div id="index">
+                    <div id="welcome">
+                        <p>
+                            Hello, my name is <span id="name">David Pang</span>.<br>
+                            I am a Full Stack Web Developer.
+                        </p>
+                    </div>
+                    <div id="introduction">
+                        <p>
+                            Currently, I am studying Computer Studies in Langara, B.C. Canada. <br>
+                            I have 4 year backend development experience and a Bachelor in Mathematics.
+                        </p>
+                    </div>
+                    <a id="checkout_more" href="about.html">Checkout More</a>
+                </div>
+                <br>
+            </main>
+            <aside>
+                <h3>Useful Resources</h3>
+                <ul>
+                    <li><a href="https://spec.whatwg.org/" target="_blank">WHATWG</a></li>
+                    <li><a href="https://www.cs.usfca.edu/~galles/visualization/Algorithms" target="_blank">Data Algorithms<br>(David Gallos)</a></li>
+                    <li><a href="https://docs.python.org/3/tutorial/" target="_blank">Python tutorial<br>(Official)</a></li>
+                    <li><a href="https://www.jetbrains.com/" target="_blank">Jetbrains</a></li>
+                    <li><a href="https://linux.vbird.org/" target="_blank">vbird<br>(Linux tutorials)<br>(Chinese)</a></li>
+                </ul>
+            </aside>
+            <footer>
+                <ul id="contacts">
+                    <li><a href="mailto:dpang06@mylangara.ca" target="_blank"><img src="images/email.png" height="16" width="16" alt="icon">Email</a></li>
+                    <li><a href="https://github.com/dpang06" target="_blank"><img src="images/github.svg" height="16" width="16" alt="icon">Github</a></li>
+                    <li><a href="https://leetcode.com/dpang06" target="_blank"><img src="images/leetcode.png" height="16" width="16" alt="icon">Leetcode</a></li>
+                </ul>
+                <p id="copyright">Created by David Pang, 2022</p>
+                Site icon by <a href="https://icons8.com/" target="_blank">icons8</a><br>
+            </footer>
+        </div>
+    </body>
+</html>

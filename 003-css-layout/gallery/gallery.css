@@ -1,0 +1,15 @@
+#gallery a span {
+    /* display: none; */
+    position: absolute;
+    opacity: 0;
+    transition: opacity 3s ease-in-out;
+    left: -1000px;
+    /* top: 100px; */
+}
+#gallery a:hover span {
+    /* display: block; */
+    position: absolute;
+    opacity: 1;
+    top: 16px; left: 320px;
+    text-align: center;
+}

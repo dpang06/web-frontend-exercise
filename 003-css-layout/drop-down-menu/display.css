@@ -1,0 +1,39 @@
+nav {
+    /* position: absolute; */
+}
+nav ul li {
+    display: inline-block;
+}
+
+nav ul ul {
+    position: absolute;
+    display: none;
+    padding: 0;
+}
+nav li:hover ul {
+    display: block;
+}
+
+nav ul ul li {
+    display: block;
+}
+
+/*
+Styling
+*/
+nav {
+    border: 3px solid;
+}
+nav ul {
+    list-style-type: none;
+}
+nav > ul {
+    /* background-color: blue; */
+    border: 1px solid
+}
+nav ul li {
+    background-color: aqua;
+}
+nav a {
+    text-decoration: none;
+}

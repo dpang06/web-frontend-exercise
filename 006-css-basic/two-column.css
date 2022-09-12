@@ -1,0 +1,32 @@
+header {
+    font-size: 3em;
+}
+
+nav { 
+    float: left;
+    width: 90px;
+    padding: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+}
+nav a:visited {
+    color: rgb(0, 102, 204);
+}
+nav a:hover {
+    background-color: orange;
+}
+
+main {
+    margin-left: 100px;
+}
+
+footer {
+    clear: left;
+}

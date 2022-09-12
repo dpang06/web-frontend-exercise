@@ -1,0 +1,162 @@
+/*
+Monocromatic (00f)
+#0000ff
+#000066
+#9999ff
+#808080
+
+Tint and Shade Variation (00f)
+#000099
+#0000cc
+#0000ff
+#3333ff
+#6666ff
+*/
+
+body {
+    margin: 0;
+}
+
+#wrapper {
+    /* CSS grid set up */
+    display: grid;
+    grid-template:
+        'nav header aside' auto
+        'nav main aside' 1fr
+        'footer footer footer' auto /
+        auto 1fr auto
+        ;
+    min-height: 100vh;
+
+    /* general format */
+    background-color: #000099;
+    color: white;
+    font-family: Consolas, "Courier New", monospace, serif;
+    font-size: large;
+}
+
+#wrapper a:link { color:white; }
+#wrapper a:visited { color:white; }
+#wrapper a:hover { color:#6666ff; }
+
+/* nav */
+nav { 
+    grid-area: nav;
+
+    background-color: #6666ff;
+    padding: 0;
+    margin: 0;
+
+    /* this will remove the bar outside of CSS grid context, so no!!!! */
+    /* position: fixed; */
+
+    /* sticky bar */
+    position: sticky;
+    overflow: auto;
+    top: 0;
+    height: 100%;
+}
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    height: 100%; /* This is necessary. Otherwise can't see last item for small height screen*/
+}
+nav ul li {
+    padding: 10px 0px;
+}
+nav ul li a {
+    font-size: xx-large;
+    text-decoration: none;
+    padding: 10px 0px;
+    display: block;
+}
+nav ul li a:hover {
+    background-color: #0000ff;
+}
+
+/* header */
+header { 
+    grid-area: header;
+
+    background-color: #0000cc;
+    font-size: xx-large;
+    font-weight: bold;
+}
+/* main */
+main { grid-area: main; margin: 0; background-image: url("images/background.jpg"); background-size: cover }
+main th { border: 1px #0000ff solid; }
+main td { border: 1px #3333ff dashed; }
+/* main of experience, education, projects */
+main.skills dl {
+    margin: 0;
+}
+main.skills table.skills {
+    float: right;
+    overflow: auto;
+
+    width: 50%;
+    border: 1px #9999ff dashed;
+    text-align: center;
+}
+main.skills table.skills th.type {
+    width: 40%;
+}
+main.skills table.skills th.skills {
+    width: 60%;
+}
+main.skills dl dt {
+    border-top: 1px solid #9999ff;
+    font-size: x-large;
+    color: #9999ff;
+}
+main.skills dl dd {
+    overflow: auto;
+    margin: 0;
+}
+main.skills div#decoration {
+    display: block;
+    margin-left: auto;
+    height: 128px;
+    width: 128px;
+    background-size: cover;
+}
+
+/* footer */
+footer {
+    grid-area: footer;
+    background-color: #3333ff;
+    overflow: auto;
+
+    /* sticky bar */
+    position: sticky;
+    bottom: 0;
+    height: 100%;
+}
+footer ul {
+    display: inline;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+footer ul li { display: inline; }
+footer ul li a { text-decoration: underline; }
+footer #copyright { 
+    margin: 0;
+    font-style: italic;
+}
+
+/* aside */
+aside {
+    grid-area: aside;
+    border-left: #ffffff solid 1px;
+
+    /* sticky bar */
+    position: sticky;
+    top: 0;
+    height: 100%;
+    overflow: auto;
+}
+aside ul li {
+    margin-bottom: 10px;
+}
